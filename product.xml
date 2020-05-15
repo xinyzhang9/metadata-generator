@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<metadata:metadata xmlns:metadata="http://www.hp.com/maas/1.0.0/metadata" domain="sam">
+  <metadata:complexTypeDescriptors/>
+  <metadata:entityDescriptors>
+    <metadata:entityDescriptor>
+      <metadata:isSystem>false</metadata:isSystem>
+      <metadata:localizedLabelKey>Product.EntityType.Name</metadata:localizedLabelKey>
+      <metadata:name>Product</metadata:name>
+      <metadata:propertyDescriptors>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>Product.Property.Name</metadata:localizedLabelKey>
+          <metadata:name>Name</metadata:name>
+          <metadata:flavors>
+            <metadata:flavor>EMS</metadata:flavor>
+          </metadata:flavors>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>true</metadata:isRequired>
+          <metadata:isSearchable>true</metadata:isSearchable>
+          <metadata:isSortable>true</metadata:isSortable>
+          <metadata:isTextSearchable>false</metadata:isTextSearchable>
+          <metadata:isUnique>true</metadata:isUnique>
+          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+        </metadata:propertyDescriptor>
+      </metadata:propertyDescriptors>
+    </metadata:entityDescriptor>
+    <metadata:tags>
+      <metadata:tag>tag1</metadata:tag>
+      <metadata:tag>tag2</metadata:tag>
+    </metadata:tags>
+  </metadata:entityDescriptors>
+  <metadata:enumerationDescriptors/>
+  <metadata:pathDescriptors/>
+  <metadata:relationDescriptors/>
+  <metadata:resourceDescriptors/>
+</metadata:metadata>
