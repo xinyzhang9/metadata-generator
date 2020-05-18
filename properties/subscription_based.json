@@ -1,0 +1,13 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"Product.Property.SubscriptionBased",
+    "name":"SubscriptionBased",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"false",
+    "isSearchable":"false",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"false",
+    "logicalType":"BOOLEAN"
+}

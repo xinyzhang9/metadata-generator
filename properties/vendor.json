@@ -1,0 +1,14 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"Product.Property.Vendor",
+    "name":"Vendor",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"true",
+    "isSearchable":"true",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"true",
+    "logicalType":"ENTITY_LINK",
+    "referenceName":"ProductToVendor"
+}

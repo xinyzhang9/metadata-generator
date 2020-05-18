@@ -1,6 +1,12 @@
 from lxml.etree import Element, SubElement, QName, tostring
 import json
 from propertyUtil import make as makeProperty
+
+fieldDir = "./properties/"
+
+def conf(name):
+    return fieldDir + name + '.json'
+
 def make(parent, prefix, params):
     entityDescriptor = SubElement(parent, QName(prefix, "entityDescriptor"))
     isSystem = SubElement(entityDescriptor, QName(prefix, "isSystem"));
@@ -14,7 +20,9 @@ def make(parent, prefix, params):
 
     propertyDescriptors = SubElement(entityDescriptor, QName(prefix, "propertyDescriptors"))
     # make properties here
-    makeProperty(propertyDescriptors, prefix, json.load(open("./fields/name.json")))
+    for prop in params["properties"]:
+         makeProperty(propertyDescriptors, prefix, json.load(open(conf(prop))))
+
     #...
     if "tags" in params.keys():
         flavors = SubElement(parent, QName(prefix, "tags"))

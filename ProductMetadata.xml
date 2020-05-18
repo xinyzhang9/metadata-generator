@@ -54,6 +54,22 @@
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
           <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>Product.Property.Vendor</metadata:localizedLabelKey>
+          <metadata:name>Vendor</metadata:name>
+          <metadata:flavors/>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>true</metadata:isRequired>
+          <metadata:isSearchable>true</metadata:isSearchable>
+          <metadata:isSortable>true</metadata:isSortable>
+          <metadata:isTextSearchable>false</metadata:isTextSearchable>
+          <metadata:isUnique>true</metadata:isUnique>
+          <metadata:logicalTypelogicalType>ENTITY_LINK</metadata:logicalTypelogicalType>
+          <metadata:referenceName>ProductToVendor</metadata:referenceName>
+          <metadata:tags/>
+        </metadata:propertyDescriptor>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
           <metadata:localizedLabelKey>Product.Property.ProductEnv</metadata:localizedLabelKey>
           <metadata:name>ProductEnv</metadata:name>
           <metadata:flavors/>

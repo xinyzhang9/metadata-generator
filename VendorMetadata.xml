@@ -4,8 +4,8 @@
   <metadata:entityDescriptors>
     <metadata:entityDescriptor>
       <metadata:isSystem>false</metadata:isSystem>
-      <metadata:localizedLabelKey>Product.EntityType.Name</metadata:localizedLabelKey>
-      <metadata:name>Product</metadata:name>
+      <metadata:localizedLabelKey>Product.EntityType.Vendor</metadata:localizedLabelKey>
+      <metadata:name>Vendor</metadata:name>
       <metadata:propertyDescriptors>
         <metadata:propertyDescriptor>
           <metadata:isSystem>true</metadata:isSystem>
@@ -80,36 +80,6 @@
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>false</metadata:isUnique>
           <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
-          <metadata:tags/>
-        </metadata:propertyDescriptor>
-        <metadata:propertyDescriptor>
-          <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.SubscriptionBased</metadata:localizedLabelKey>
-          <metadata:name>SubscriptionBased</metadata:name>
-          <metadata:flavors/>
-          <metadata:isHidden>false</metadata:isHidden>
-          <metadata:isReadOnly>true</metadata:isReadOnly>
-          <metadata:isRequired>false</metadata:isRequired>
-          <metadata:isSearchable>false</metadata:isSearchable>
-          <metadata:isSortable>true</metadata:isSortable>
-          <metadata:isTextSearchable>false</metadata:isTextSearchable>
-          <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>BOOLEAN</metadata:logicalTypelogicalType>
-          <metadata:tags/>
-        </metadata:propertyDescriptor>
-        <metadata:propertyDescriptor>
-          <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.DataSource</metadata:localizedLabelKey>
-          <metadata:name>DataSource</metadata:name>
-          <metadata:flavors/>
-          <metadata:isHidden>false</metadata:isHidden>
-          <metadata:isReadOnly>true</metadata:isReadOnly>
-          <metadata:isRequired>true</metadata:isRequired>
-          <metadata:isSearchable>false</metadata:isSearchable>
-          <metadata:isSortable>true</metadata:isSortable>
-          <metadata:isTextSearchable>false</metadata:isTextSearchable>
-          <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>BOOLEAN</metadata:logicalTypelogicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
       </metadata:propertyDescriptors>

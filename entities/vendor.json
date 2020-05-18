@@ -1,0 +1,7 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"Product.EntityType.Vendor",
+    "name":"Vendor",
+    "tags":["tag1", "tag2"],
+    "properties":["guid", "name", "code", "product_env", "synctime"]
+}

@@ -10,8 +10,8 @@ def make(parent, prefix, params):
     name = SubElement(propertyDescriptor, QName(prefix, "name"))
     name.text = params["name"]
 
+    flavors = SubElement(propertyDescriptor, QName(prefix, "flavors"))
     if "flavors" in params.keys():
-        flavors = SubElement(propertyDescriptor, QName(prefix, "flavors"))
         for f in params["flavors"]:
             flavor = SubElement(flavors, QName(prefix, "flavor"))
             flavor.text = f
@@ -37,6 +37,10 @@ def make(parent, prefix, params):
     isUnique = SubElement(propertyDescriptor, QName(prefix, "isUnique"))
     isUnique.text = params["isUnique"]
 
+    if "searchEngineAlias" in params.keys():
+        searchEngineAlias = SubElement(propertyDescriptor, QName(prefix, "searchEngineAlias"))
+        searchEngineAlias = params=["searchEngineAliass"]
+
     logicalType = SubElement(propertyDescriptor, QName(prefix, "logicalTypelogicalType"))
     logicalType.text = params["logicalType"]
 
@@ -44,9 +48,9 @@ def make(parent, prefix, params):
         referenceName = SubElement(propertyDescriptor, QName(prefix, "referenceName"))
         referenceName.text = params["referenceName"]
 
+    tags = SubElement(propertyDescriptor, QName(prefix, "tags"))
     if "tags" in params.keys():
-        flavors = SubElement(propertyDescriptor, QName(prefix, "tags"))
         for t in params["tags"]:
-            tag = SubElement(flavors, QName(prefix, "tag"))
+            tag = SubElement(tags, QName(prefix, "tag"))
             tag.text = t
 

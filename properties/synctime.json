@@ -1,0 +1,13 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"Product.Property.SyncTime",
+    "name":"SyncTime",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"false",
+    "isSearchable":"false",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"false",
+    "logicalType":"SMALL_TEXT"
+}
