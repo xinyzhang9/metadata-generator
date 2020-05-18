@@ -137,6 +137,18 @@
   </metadata:entityDescriptors>
   <metadata:enumerationDescriptors/>
   <metadata:pathDescriptors/>
-  <metadata:relationDescriptors/>
+  <metadata:relationDescriptors>
+    <metadata:relationDescriptor>
+      <metadata:isSystem>true</metadata:isSystem>
+      <metadata:localizedLabelKey>Product.Relation.ProductToVendor.Forward</metadata:localizedLabelKey>
+      <metadata:name>ProductToVendor</metadata:name>
+      <metadata:localizedOppositeLabelKey>Product.Relation.ProductToVendor.Opposite</metadata:localizedOppositeLabelKey>
+      <metadata:cardinality>ONE2MANY</metadata:cardinality>
+      <metadata:firstEndpointEntityName>Product</metadata:firstEndpointEntityName>
+      <metadata:nature>LINK</metadata:nature>
+      <metadata:secondEndpointEntityName>Vendor</metadata:secondEndpointEntityName>
+      <metadata:tags/>
+    </metadata:relationDescriptor>
+  </metadata:relationDescriptors>
   <metadata:resourceDescriptors/>
 </metadata:metadata>
