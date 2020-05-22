@@ -1,0 +1,13 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"Vendor.Property.Code",
+    "name":"Code",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"true",
+    "isSearchable":"true",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"true",
+    "logicalType":"SMALL_TEXT"
+}

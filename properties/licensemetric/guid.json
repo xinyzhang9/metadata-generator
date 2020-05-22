@@ -1,0 +1,13 @@
+{
+    "isSystem": "true",
+    "localizedLabelKey":"LicenseMetric.Property.Guid",
+    "name":"Guid",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"true",
+    "isSearchable":"true",
+    "isSortable":"false",
+    "isTextSearchable":"false",
+    "isUnique":"true",
+    "logicalType":"SMALL_TEXT"
+}

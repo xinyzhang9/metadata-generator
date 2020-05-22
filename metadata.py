@@ -2,6 +2,7 @@ from lxml.etree import Element, SubElement, QName, tostring
 import json
 from entityUtil import make as makeEntity
 from relationUtil import make as makeRelation
+from enumUtil import make as makeEnum
 
 import os
 
@@ -13,7 +14,7 @@ class Metadata:
         self.entity = entity
 
     def outputfilename(self):
-        return self.entity.capitalize()+"Metadata.xml"
+        return "./results/" + self.entity + "Metadata.xml"
     
     def entityconf(self):
         return "./entities/" + self.entity + ".json"
@@ -25,6 +26,13 @@ class Metadata:
                 res.append("./relations/" + file)
         return res
 
+    def getEnumFiles(self):
+        res = []
+        for file in os.listdir("enumerations"):
+            if file.lower().startswith(self.entity.lower()):
+                res.append("./enumerations/" + file)
+        return res
+
     def export(self):
         prefix = self.namespaces["metadata"]
         root = Element(QName(prefix,"metadata"), nsmap=self.namespaces, domain=self.domain)
@@ -33,6 +41,10 @@ class Metadata:
         makeEntity(entityDescriptors, prefix, json.load(open(self.entityconf())))
 
         enumerationDescriptors = SubElement(root, QName(prefix,"enumerationDescriptors"))
+        enums = self.getEnumFiles()
+        if len(enums) > 0:
+            for enum in enums:
+                makeEnum(enumerationDescriptors, prefix, json.load(open(enum)))
         pathDescriptors = SubElement(root, QName(prefix,"pathDescriptors"))
 
         relationDescriptors = SubElement(root, QName(prefix,"relationDescriptors"))

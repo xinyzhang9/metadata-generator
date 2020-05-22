@@ -41,10 +41,10 @@ def make(parent, prefix, params):
         searchEngineAlias = SubElement(propertyDescriptor, QName(prefix, "searchEngineAlias"))
         searchEngineAlias = params=["searchEngineAliass"]
 
-    logicalType = SubElement(propertyDescriptor, QName(prefix, "logicalTypelogicalType"))
+    logicalType = SubElement(propertyDescriptor, QName(prefix, "logicalType"))
     logicalType.text = params["logicalType"]
 
-    if logicalType.text == "ENTITY_LINK":
+    if logicalType.text == "ENTITY_LINK" or logicalType.text == "ENUM":
         referenceName = SubElement(propertyDescriptor, QName(prefix, "referenceName"))
         referenceName.text = params["referenceName"]
 

@@ -1,0 +1,22 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"LicenseMetric.Enum.GroupCIType",
+    "name":"GroupCITypeEnum",
+    "isVolatileEnumeration":"false",
+    "values":[{
+        "isSystem": "true",
+        "localizedLabelKey":"LicenseMetric.Enum.GroupCIType.Value.Installation",
+        "name":"INSTALLATION",
+        "order":"1"
+    },{
+        "isSystem": "true",
+        "localizedLabelKey":"LicenseMetric.Enum.GroupCIType.Value.Ose",
+        "name":"OSE",
+        "order":"2"
+    },{
+        "isSystem": "true",
+        "localizedLabelKey":"LicenseMetric.Enum.GroupCIType.Value.Host",
+        "name":"HOST",
+        "order":"3"
+    }]
+}

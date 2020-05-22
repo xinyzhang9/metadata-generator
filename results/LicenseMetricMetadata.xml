@@ -4,12 +4,12 @@
   <metadata:entityDescriptors>
     <metadata:entityDescriptor>
       <metadata:isSystem>false</metadata:isSystem>
-      <metadata:localizedLabelKey>Product.EntityType.Name</metadata:localizedLabelKey>
-      <metadata:name>Product</metadata:name>
+      <metadata:localizedLabelKey>LicenseMetric.EntityType.Name</metadata:localizedLabelKey>
+      <metadata:name>LicenseMetric</metadata:name>
       <metadata:propertyDescriptors>
         <metadata:propertyDescriptor>
           <metadata:isSystem>true</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.Guid</metadata:localizedLabelKey>
+          <metadata:localizedLabelKey>LicenseMetric.Property.Guid</metadata:localizedLabelKey>
           <metadata:name>Guid</metadata:name>
           <metadata:flavors/>
           <metadata:isHidden>false</metadata:isHidden>
@@ -19,27 +19,12 @@
           <metadata:isSortable>false</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
           <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.Name</metadata:localizedLabelKey>
-          <metadata:name>Name</metadata:name>
-          <metadata:flavors/>
-          <metadata:isHidden>false</metadata:isHidden>
-          <metadata:isReadOnly>true</metadata:isReadOnly>
-          <metadata:isRequired>true</metadata:isRequired>
-          <metadata:isSearchable>true</metadata:isSearchable>
-          <metadata:isSortable>true</metadata:isSortable>
-          <metadata:isTextSearchable>false</metadata:isTextSearchable>
-          <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
-          <metadata:tags/>
-        </metadata:propertyDescriptor>
-        <metadata:propertyDescriptor>
-          <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.Code</metadata:localizedLabelKey>
+          <metadata:localizedLabelKey>LicenseMetric.Property.Code</metadata:localizedLabelKey>
           <metadata:name>Code</metadata:name>
           <metadata:flavors/>
           <metadata:isHidden>false</metadata:isHidden>
@@ -49,13 +34,13 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
           <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.Vendor</metadata:localizedLabelKey>
-          <metadata:name>Vendor</metadata:name>
+          <metadata:localizedLabelKey>LicenseMetric.Property.Name</metadata:localizedLabelKey>
+          <metadata:name>Name</metadata:name>
           <metadata:flavors/>
           <metadata:isHidden>false</metadata:isHidden>
           <metadata:isReadOnly>true</metadata:isReadOnly>
@@ -64,14 +49,13 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>ENTITY_LINK</metadata:logicalTypelogicalType>
-          <metadata:referenceName>ProductToVendor</metadata:referenceName>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
           <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.ProductEnv</metadata:localizedLabelKey>
-          <metadata:name>ProductEnv</metadata:name>
+          <metadata:localizedLabelKey>LicenseMetric.Property.System</metadata:localizedLabelKey>
+          <metadata:name>System</metadata:name>
           <metadata:flavors/>
           <metadata:isHidden>false</metadata:isHidden>
           <metadata:isReadOnly>true</metadata:isReadOnly>
@@ -80,52 +64,54 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>BOOLEAN</metadata:logicalTypelogicalType>
+          <metadata:logicalType>BOOLEAN</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
           <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.SyncTime</metadata:localizedLabelKey>
-          <metadata:name>SyncTime</metadata:name>
-          <metadata:flavors/>
-          <metadata:isHidden>false</metadata:isHidden>
-          <metadata:isReadOnly>true</metadata:isReadOnly>
-          <metadata:isRequired>false</metadata:isRequired>
-          <metadata:isSearchable>false</metadata:isSearchable>
-          <metadata:isSortable>true</metadata:isSortable>
-          <metadata:isTextSearchable>false</metadata:isTextSearchable>
-          <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
-          <metadata:tags/>
-        </metadata:propertyDescriptor>
-        <metadata:propertyDescriptor>
-          <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.SubscriptionBased</metadata:localizedLabelKey>
-          <metadata:name>SubscriptionBased</metadata:name>
-          <metadata:flavors/>
-          <metadata:isHidden>false</metadata:isHidden>
-          <metadata:isReadOnly>true</metadata:isReadOnly>
-          <metadata:isRequired>false</metadata:isRequired>
-          <metadata:isSearchable>false</metadata:isSearchable>
-          <metadata:isSortable>true</metadata:isSortable>
-          <metadata:isTextSearchable>false</metadata:isTextSearchable>
-          <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>BOOLEAN</metadata:logicalTypelogicalType>
-          <metadata:tags/>
-        </metadata:propertyDescriptor>
-        <metadata:propertyDescriptor>
-          <metadata:isSystem>false</metadata:isSystem>
-          <metadata:localizedLabelKey>Product.Property.DataSource</metadata:localizedLabelKey>
-          <metadata:name>DataSource</metadata:name>
+          <metadata:localizedLabelKey>LicenseMetric.Property.Vendor</metadata:localizedLabelKey>
+          <metadata:name>Vendor</metadata:name>
           <metadata:flavors/>
           <metadata:isHidden>false</metadata:isHidden>
           <metadata:isReadOnly>true</metadata:isReadOnly>
           <metadata:isRequired>true</metadata:isRequired>
-          <metadata:isSearchable>false</metadata:isSearchable>
+          <metadata:isSearchable>true</metadata:isSearchable>
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>BOOLEAN</metadata:logicalTypelogicalType>
+          <metadata:logicalType>ENTITY_LINK</metadata:logicalType>
+          <metadata:referenceName>LicenseMetricToVendor</metadata:referenceName>
+          <metadata:tags/>
+        </metadata:propertyDescriptor>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>LicenseMetric.Property.Description</metadata:localizedLabelKey>
+          <metadata:name>Description</metadata:name>
+          <metadata:flavors/>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>false</metadata:isRequired>
+          <metadata:isSearchable>true</metadata:isSearchable>
+          <metadata:isSortable>false</metadata:isSortable>
+          <metadata:isTextSearchable>true</metadata:isTextSearchable>
+          <metadata:isUnique>false</metadata:isUnique>
+          <metadata:logicalType>LARGE_TEXT</metadata:logicalType>
+          <metadata:tags/>
+        </metadata:propertyDescriptor>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>LicenseMetric.Property.GroupCIType</metadata:localizedLabelKey>
+          <metadata:name>GroupCIType</metadata:name>
+          <metadata:flavors/>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>true</metadata:isRequired>
+          <metadata:isSearchable>true</metadata:isSearchable>
+          <metadata:isSortable>true</metadata:isSortable>
+          <metadata:isTextSearchable>false</metadata:isTextSearchable>
+          <metadata:isUnique>false</metadata:isUnique>
+          <metadata:logicalType>ENUM</metadata:logicalType>
+          <metadata:referenceName>GroupCITypeEnum</metadata:referenceName>
           <metadata:tags/>
         </metadata:propertyDescriptor>
       </metadata:propertyDescriptors>
@@ -135,16 +121,43 @@
       <metadata:tag>tag2</metadata:tag>
     </metadata:tags>
   </metadata:entityDescriptors>
-  <metadata:enumerationDescriptors/>
+  <metadata:enumerationDescriptors>
+    <metadata:enumerationDescriptor>
+      <metadata:isSystem>false</metadata:isSystem>
+      <metadata:localizedLabelKey>LicenseMetric.Enum.GroupCIType</metadata:localizedLabelKey>
+      <metadata:name>GroupCITypeEnum</metadata:name>
+      <metadata:isVolatileEnumeration>false</metadata:isVolatileEnumeration>
+      <metadata:values>
+        <metadata:value>
+          <metadata:isSystem>true</metadata:isSystem>
+          <metadata:localizedLabelKey>LicenseMetric.Enum.GroupCIType.Value.Installation</metadata:localizedLabelKey>
+          <metadata:name>INSTALLATION</metadata:name>
+          <metadata:order>1</metadata:order>
+        </metadata:value>
+        <metadata:value>
+          <metadata:isSystem>true</metadata:isSystem>
+          <metadata:localizedLabelKey>LicenseMetric.Enum.GroupCIType.Value.Ose</metadata:localizedLabelKey>
+          <metadata:name>OSE</metadata:name>
+          <metadata:order>2</metadata:order>
+        </metadata:value>
+        <metadata:value>
+          <metadata:isSystem>true</metadata:isSystem>
+          <metadata:localizedLabelKey>LicenseMetric.Enum.GroupCIType.Value.Host</metadata:localizedLabelKey>
+          <metadata:name>HOST</metadata:name>
+          <metadata:order>3</metadata:order>
+        </metadata:value>
+      </metadata:values>
+    </metadata:enumerationDescriptor>
+  </metadata:enumerationDescriptors>
   <metadata:pathDescriptors/>
   <metadata:relationDescriptors>
     <metadata:relationDescriptor>
       <metadata:isSystem>true</metadata:isSystem>
-      <metadata:localizedLabelKey>Product.Relation.ProductToVendor.Forward</metadata:localizedLabelKey>
-      <metadata:name>ProductToVendor</metadata:name>
-      <metadata:localizedOppositeLabelKey>Product.Relation.ProductToVendor.Opposite</metadata:localizedOppositeLabelKey>
-      <metadata:cardinality>ONE2MANY</metadata:cardinality>
-      <metadata:firstEndpointEntityName>Product</metadata:firstEndpointEntityName>
+      <metadata:localizedLabelKey>LicenseMetric.Relation.LicenseMetricToVendor.Forward</metadata:localizedLabelKey>
+      <metadata:name>LicenseMetricToVendor</metadata:name>
+      <metadata:localizedOppositeLabelKey>LicenseMetric.Relation.LicenseMetricToVendor.Opposite</metadata:localizedOppositeLabelKey>
+      <metadata:cardinality>MANY2MANY</metadata:cardinality>
+      <metadata:firstEndpointEntityName>LicenseMetric</metadata:firstEndpointEntityName>
       <metadata:nature>LINK</metadata:nature>
       <metadata:secondEndpointEntityName>Vendor</metadata:secondEndpointEntityName>
       <metadata:tags/>

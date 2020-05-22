@@ -1,0 +1,13 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"Vendor.Property.ProductEnv",
+    "name":"ProductEnv",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"true",
+    "isSearchable":"false",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"false",
+    "logicalType":"BOOLEAN"
+}

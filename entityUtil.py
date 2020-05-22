@@ -4,8 +4,8 @@ from propertyUtil import make as makeProperty
 
 fieldDir = "./properties/"
 
-def conf(name):
-    return fieldDir + name + '.json'
+def conf(subdir, name):
+    return fieldDir + subdir +'/' + name + '.json'
 
 def make(parent, prefix, params):
     entityDescriptor = SubElement(parent, QName(prefix, "entityDescriptor"))
@@ -21,7 +21,7 @@ def make(parent, prefix, params):
     propertyDescriptors = SubElement(entityDescriptor, QName(prefix, "propertyDescriptors"))
     # make properties here
     for prop in params["properties"]:
-         makeProperty(propertyDescriptors, prefix, json.load(open(conf(prop))))
+         makeProperty(propertyDescriptors, prefix, json.load(open(conf(name.text.lower(), prop))))
 
     #...
     if "tags" in params.keys():

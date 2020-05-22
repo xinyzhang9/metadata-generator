@@ -4,8 +4,8 @@
   <metadata:entityDescriptors>
     <metadata:entityDescriptor>
       <metadata:isSystem>false</metadata:isSystem>
-      <metadata:localizedLabelKey>Product.EntityType.Vendor</metadata:localizedLabelKey>
-      <metadata:name>Vendor</metadata:name>
+      <metadata:localizedLabelKey>Product.EntityType.Name</metadata:localizedLabelKey>
+      <metadata:name>Product</metadata:name>
       <metadata:propertyDescriptors>
         <metadata:propertyDescriptor>
           <metadata:isSystem>true</metadata:isSystem>
@@ -19,7 +19,7 @@
           <metadata:isSortable>false</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
@@ -34,7 +34,7 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
@@ -49,7 +49,23 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>true</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
+          <metadata:tags/>
+        </metadata:propertyDescriptor>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>Product.Property.Vendor</metadata:localizedLabelKey>
+          <metadata:name>Vendor</metadata:name>
+          <metadata:flavors/>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>true</metadata:isRequired>
+          <metadata:isSearchable>true</metadata:isSearchable>
+          <metadata:isSortable>true</metadata:isSortable>
+          <metadata:isTextSearchable>false</metadata:isTextSearchable>
+          <metadata:isUnique>false</metadata:isUnique>
+          <metadata:logicalType>ENTITY_LINK</metadata:logicalType>
+          <metadata:referenceName>ProductToVendor</metadata:referenceName>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
@@ -64,7 +80,7 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>BOOLEAN</metadata:logicalTypelogicalType>
+          <metadata:logicalType>BOOLEAN</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
         <metadata:propertyDescriptor>
@@ -79,7 +95,37 @@
           <metadata:isSortable>true</metadata:isSortable>
           <metadata:isTextSearchable>false</metadata:isTextSearchable>
           <metadata:isUnique>false</metadata:isUnique>
-          <metadata:logicalTypelogicalType>SMALL_TEXT</metadata:logicalTypelogicalType>
+          <metadata:logicalType>SMALL_TEXT</metadata:logicalType>
+          <metadata:tags/>
+        </metadata:propertyDescriptor>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>Product.Property.SubscriptionBased</metadata:localizedLabelKey>
+          <metadata:name>SubscriptionBased</metadata:name>
+          <metadata:flavors/>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>false</metadata:isRequired>
+          <metadata:isSearchable>false</metadata:isSearchable>
+          <metadata:isSortable>true</metadata:isSortable>
+          <metadata:isTextSearchable>false</metadata:isTextSearchable>
+          <metadata:isUnique>false</metadata:isUnique>
+          <metadata:logicalType>BOOLEAN</metadata:logicalType>
+          <metadata:tags/>
+        </metadata:propertyDescriptor>
+        <metadata:propertyDescriptor>
+          <metadata:isSystem>false</metadata:isSystem>
+          <metadata:localizedLabelKey>Product.Property.DataSource</metadata:localizedLabelKey>
+          <metadata:name>DataSource</metadata:name>
+          <metadata:flavors/>
+          <metadata:isHidden>false</metadata:isHidden>
+          <metadata:isReadOnly>true</metadata:isReadOnly>
+          <metadata:isRequired>true</metadata:isRequired>
+          <metadata:isSearchable>false</metadata:isSearchable>
+          <metadata:isSortable>true</metadata:isSortable>
+          <metadata:isTextSearchable>false</metadata:isTextSearchable>
+          <metadata:isUnique>false</metadata:isUnique>
+          <metadata:logicalType>BOOLEAN</metadata:logicalType>
           <metadata:tags/>
         </metadata:propertyDescriptor>
       </metadata:propertyDescriptors>
@@ -91,6 +137,18 @@
   </metadata:entityDescriptors>
   <metadata:enumerationDescriptors/>
   <metadata:pathDescriptors/>
-  <metadata:relationDescriptors/>
+  <metadata:relationDescriptors>
+    <metadata:relationDescriptor>
+      <metadata:isSystem>true</metadata:isSystem>
+      <metadata:localizedLabelKey>Product.Relation.ProductToVendor.Forward</metadata:localizedLabelKey>
+      <metadata:name>ProductToVendor</metadata:name>
+      <metadata:localizedOppositeLabelKey>Product.Relation.ProductToVendor.Opposite</metadata:localizedOppositeLabelKey>
+      <metadata:cardinality>ONE2MANY</metadata:cardinality>
+      <metadata:firstEndpointEntityName>Product</metadata:firstEndpointEntityName>
+      <metadata:nature>LINK</metadata:nature>
+      <metadata:secondEndpointEntityName>Vendor</metadata:secondEndpointEntityName>
+      <metadata:tags/>
+    </metadata:relationDescriptor>
+  </metadata:relationDescriptors>
   <metadata:resourceDescriptors/>
 </metadata:metadata>

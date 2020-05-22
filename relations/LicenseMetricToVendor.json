@@ -1,0 +1,10 @@
+{
+    "isSystem": "true",
+    "localizedLabelKey":"LicenseMetric.Relation.LicenseMetricToVendor.Forward",
+    "name":"LicenseMetricToVendor",
+    "localizedOppositeLabelKey":"LicenseMetric.Relation.LicenseMetricToVendor.Opposite",
+    "cardinality":"MANY2MANY",
+    "firstEndpointEntityName": "LicenseMetric",
+    "nature":"LINK",
+    "secondEndpointEntityName":"Vendor"
+}

@@ -1,0 +1,13 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"LicenseMetric.Property.System",
+    "name":"System",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"true",
+    "isSearchable":"false",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"false",
+    "logicalType":"BOOLEAN"
+}

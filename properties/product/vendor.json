@@ -8,7 +8,7 @@
     "isSearchable":"true",
     "isSortable":"true",
     "isTextSearchable":"false",
-    "isUnique":"true",
+    "isUnique":"false",
     "logicalType":"ENTITY_LINK",
     "referenceName":"ProductToVendor"
 }

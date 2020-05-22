@@ -1,0 +1,13 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"LicenseMetric.Property.Description",
+    "name":"Description",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"false",
+    "isSearchable":"true",
+    "isSortable":"false",
+    "isTextSearchable":"true",
+    "isUnique":"false",
+    "logicalType":"LARGE_TEXT"
+}

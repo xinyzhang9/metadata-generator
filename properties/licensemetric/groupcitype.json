@@ -1,0 +1,14 @@
+{
+    "isSystem": "false",
+    "localizedLabelKey":"LicenseMetric.Property.GroupCIType",
+    "name":"GroupCIType",
+    "isHidden":"false",
+    "isReadOnly":"true",
+    "isRequired":"true",
+    "isSearchable":"true",
+    "isSortable":"true",
+    "isTextSearchable":"false",
+    "isUnique":"false",
+    "logicalType":"ENUM",
+    "referenceName":"GroupCITypeEnum"
+}
