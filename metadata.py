@@ -6,6 +6,7 @@ from enumUtil import make as makeEnum
 
 import os
 
+
 class Metadata:
     def __init__(self, namespaces, entity, domain):
         super().__init__()
@@ -15,7 +16,7 @@ class Metadata:
 
     def outputfilename(self):
         return "./results/" + self.entity + "Metadata.xml"
-    
+
     def entityconf(self):
         return "./entities/" + self.entity + ".json"
 
@@ -35,28 +36,35 @@ class Metadata:
 
     def export(self):
         prefix = self.namespaces["metadata"]
-        root = Element(QName(prefix,"metadata"), nsmap=self.namespaces, domain=self.domain)
-        complexTypeDescriptors = SubElement(root, QName(prefix,"complexTypeDescriptors"))
-        entityDescriptors = SubElement(root, QName(prefix,"entityDescriptors"))
-        makeEntity(entityDescriptors, prefix, json.load(open(self.entityconf())))
+        root = Element(QName(prefix, "metadata"),
+                       nsmap=self.namespaces, domain=self.domain)
+        complexTypeDescriptors = SubElement(
+            root, QName(prefix, "complexTypeDescriptors"))
+        entityDescriptors = SubElement(
+            root, QName(prefix, "entityDescriptors"))
+        makeEntity(entityDescriptors, prefix,
+                   json.load(open(self.entityconf())))
 
-        enumerationDescriptors = SubElement(root, QName(prefix,"enumerationDescriptors"))
+        enumerationDescriptors = SubElement(
+            root, QName(prefix, "enumerationDescriptors"))
         enums = self.getEnumFiles()
         if len(enums) > 0:
             for enum in enums:
                 makeEnum(enumerationDescriptors, prefix, json.load(open(enum)))
-        pathDescriptors = SubElement(root, QName(prefix,"pathDescriptors"))
+        pathDescriptors = SubElement(root, QName(prefix, "pathDescriptors"))
 
-        relationDescriptors = SubElement(root, QName(prefix,"relationDescriptors"))
+        relationDescriptors = SubElement(
+            root, QName(prefix, "relationDescriptors"))
         relations = self.getRelationFiles()
         if len(relations) > 0:
             for rel in relations:
                 makeRelation(relationDescriptors, prefix, json.load(open(rel)))
 
-        resourceDescriptors = SubElement(root, QName(prefix,"resourceDescriptors"))
-        res = tostring(root, pretty_print = True, xml_declaration = True, encoding='UTF-8', standalone=True)
+        resourceDescriptors = SubElement(
+            root, QName(prefix, "resourceDescriptors"))
+        res = tostring(root, pretty_print=True,
+                       xml_declaration=True, encoding='UTF-8', standalone=True)
 
-        with open(self.outputfilename(),"wb") as output:
+        with open(self.outputfilename(), "wb") as output:
             output.write(res)
-
 
