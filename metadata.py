@@ -3,6 +3,7 @@ import json
 from entityUtil import make as makeEntity
 from relationUtil import make as makeRelation
 from enumUtil import make as makeEnum
+from complexTypeUtil import make as makeComplexType
 
 import os
 
@@ -40,6 +41,8 @@ class Metadata:
                        nsmap=self.namespaces, domain=self.domain)
         complexTypeDescriptors = SubElement(
             root, QName(prefix, "complexTypeDescriptors"))
+        makeComplexType(complexTypeDescriptors, prefix, self.entity)
+
         entityDescriptors = SubElement(
             root, QName(prefix, "entityDescriptors"))
         makeEntity(entityDescriptors, prefix,

@@ -1,0 +1,10 @@
+{
+    "isSystem": "true",
+    "localizedLabelKey":"Product.Relation.ProductProducedBySoftwarePublisher",
+    "name":"ProductProducedBySoftwarePublisher",
+    "localizedOppositeLabelKey":"Product.Relation.SoftwarePublisherProducedProduct",
+    "cardinality":"ONE2MANY",
+    "firstEndpointEntityName": "Product",
+    "nature":"LINK",
+    "secondEndpointEntityName":"SoftwarePublisher"
+}

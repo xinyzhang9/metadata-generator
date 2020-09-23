@@ -1,6 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <metadata:metadata xmlns:metadata="http://www.hp.com/maas/1.0.0/metadata" domain="sam">
-  <metadata:complexTypeDescriptors/>
+  <metadata:complexTypeDescriptors>
+    <metadata:complexTypeDescriptor>
+      <metadata:isSystem>false</metadata:isSystem>
+      <metadata:localizedLabelKey>CalculatedFields</metadata:localizedLabelKey>
+      <metadata:name>VendorCalculatedFields</metadata:name>
+      <metadata:isVolatileComplexType>false</metadata:isVolatileComplexType>
+    </metadata:complexTypeDescriptor>
+    <metadata:complexTypeDescriptor>
+      <metadata:isSystem>false</metadata:isSystem>
+      <metadata:localizedLabelKey>CalculatedTmpFields</metadata:localizedLabelKey>
+      <metadata:name>VendorCalculatedTmpFields</metadata:name>
+      <metadata:isVolatileComplexType>false</metadata:isVolatileComplexType>
+    </metadata:complexTypeDescriptor>
+  </metadata:complexTypeDescriptors>
   <metadata:entityDescriptors>
     <metadata:entityDescriptor>
       <metadata:isSystem>false</metadata:isSystem>

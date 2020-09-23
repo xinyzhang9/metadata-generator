@@ -1,6 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <metadata:metadata xmlns:metadata="http://www.hp.com/maas/1.0.0/metadata" domain="sam">
-  <metadata:complexTypeDescriptors/>
+  <metadata:complexTypeDescriptors>
+    <metadata:complexTypeDescriptor>
+      <metadata:isSystem>false</metadata:isSystem>
+      <metadata:localizedLabelKey>CalculatedFields</metadata:localizedLabelKey>
+      <metadata:name>ProductCalculatedFields</metadata:name>
+      <metadata:isVolatileComplexType>false</metadata:isVolatileComplexType>
+    </metadata:complexTypeDescriptor>
+    <metadata:complexTypeDescriptor>
+      <metadata:isSystem>false</metadata:isSystem>
+      <metadata:localizedLabelKey>CalculatedTmpFields</metadata:localizedLabelKey>
+      <metadata:name>ProductCalculatedTmpFields</metadata:name>
+      <metadata:isVolatileComplexType>false</metadata:isVolatileComplexType>
+    </metadata:complexTypeDescriptor>
+  </metadata:complexTypeDescriptors>
   <metadata:entityDescriptors>
     <metadata:entityDescriptor>
       <metadata:isSystem>false</metadata:isSystem>
@@ -130,23 +143,20 @@
         </metadata:propertyDescriptor>
       </metadata:propertyDescriptors>
     </metadata:entityDescriptor>
-    <metadata:tags>
-      <metadata:tag>tag1</metadata:tag>
-      <metadata:tag>tag2</metadata:tag>
-    </metadata:tags>
+    <metadata:tags/>
   </metadata:entityDescriptors>
   <metadata:enumerationDescriptors/>
   <metadata:pathDescriptors/>
   <metadata:relationDescriptors>
     <metadata:relationDescriptor>
       <metadata:isSystem>true</metadata:isSystem>
-      <metadata:localizedLabelKey>Product.Relation.ProductToVendor.Forward</metadata:localizedLabelKey>
-      <metadata:name>ProductToVendor</metadata:name>
-      <metadata:localizedOppositeLabelKey>Product.Relation.ProductToVendor.Opposite</metadata:localizedOppositeLabelKey>
+      <metadata:localizedLabelKey>Product.Relation.ProductProducedBySoftwarePublisher</metadata:localizedLabelKey>
+      <metadata:name>ProductProducedBySoftwarePublisher</metadata:name>
+      <metadata:localizedOppositeLabelKey>Product.Relation.SoftwarePublisherProducedProduct</metadata:localizedOppositeLabelKey>
       <metadata:cardinality>ONE2MANY</metadata:cardinality>
       <metadata:firstEndpointEntityName>Product</metadata:firstEndpointEntityName>
       <metadata:nature>LINK</metadata:nature>
-      <metadata:secondEndpointEntityName>Vendor</metadata:secondEndpointEntityName>
+      <metadata:secondEndpointEntityName>SoftwarePublisher</metadata:secondEndpointEntityName>
       <metadata:tags/>
     </metadata:relationDescriptor>
   </metadata:relationDescriptors>

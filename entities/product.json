@@ -2,6 +2,6 @@
     "isSystem": "false",
     "localizedLabelKey":"Product.EntityType.Name",
     "name":"Product",
-    "tags":["tag1", "tag2"],
+    "tags":[],
     "properties":["guid", "name", "code", "vendor", "product_env", "synctime", "subscription_based", "datasource"]
 }
